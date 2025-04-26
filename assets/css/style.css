@@ -144,8 +144,8 @@ img {
 .nav {
     position: fixed;
     bottom: 1.5rem;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    right: 0;
     background-color: hsla(0,0%,98%, .1);
     width: 50%;
     margin-inline: auto;
@@ -270,12 +270,7 @@ img {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 768px) {
-  .nav {
-    width: 85%; /* Lebar yang lebih besar untuk layar kecil */
-    padding: 1rem;
-  }
-}
+
 
 /* For medium devices */
 
