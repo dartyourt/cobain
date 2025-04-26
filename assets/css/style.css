@@ -193,7 +193,7 @@ img {
 
 .profil__katakana{
   font-family: var(--third-font);
-  font-size: 5rem;
+  font-size: 7rem;
   color: var(--white-color);
   position: absolute;
   z-index: 1;
@@ -203,6 +203,7 @@ img {
   opacity: 0.8;
   text-align: center;
   width: 100%;
+  letter-spacing: 0.15rem;
 }
 
 .profil__img{
