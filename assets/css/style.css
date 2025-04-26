@@ -178,8 +178,8 @@ img {
 
 
 /*=============== HOME ===============*/
-/*===== PERFIL =====*/
-.perfil{
+/*===== PROFIL =====*/
+.profil{
     position: relative;
     background: var(--conic-gradient);
     height: 415px;
@@ -189,14 +189,14 @@ img {
     overflow: hidden;
 }
 
-.perfil__img{
+.profil__img{
     width: 290px;
     position: absolute;
     justify-self: center;
     align-self: flex-end;
 }
 
-.perfil__data{
+.profil__data{
     align-self: flex-end;
     background-color: hsla(0, 0%, 1%, .1);
     backdrop-filter: blur(16px);
@@ -206,13 +206,13 @@ img {
     border: 2px solid hsla(0, 0%, 100%, .5);
 }
 
-.perfil__name{
+.profil__name{
     font: var(--font-semi-bold) var(--h1-font-size) var(--second-font);
     color: var(--white-color);
     margin-bottom: 1rem;
 }
 
-.perfil__buttons{
+.profil__buttons{
     font: var(--font-regular) var(--h3-font-size) var(--body-font);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
