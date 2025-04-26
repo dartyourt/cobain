@@ -211,6 +211,7 @@ img {
     position: absolute;
     justify-self: center;
     align-self: flex-end;
+    z-index: 2;
 }
 
 .profil__data{
@@ -221,6 +222,7 @@ img {
     padding: 0.6rem 1rem;
     border-radius: 1.5rem;
     border: 2px solid hsla(0, 0%, 100%, .5);
+    z-index: 3;
 }
 
 .profil__name{
