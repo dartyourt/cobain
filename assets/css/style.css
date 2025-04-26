@@ -156,7 +156,7 @@ img {
     z-index: var(--z-fixed);
 }
 .nav__list {
-    display: flex;
+    display: grid;
     justify-content: space-between;
     align-items: center;
 
