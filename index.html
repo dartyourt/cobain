@@ -221,17 +221,80 @@
                     </div>
                 </article>
             </div>
-            
          </section>
 
          <!--==================== EXPERIENCE ====================-->
          <section class="experience section" id="experience">
-            
+            <h2 class="section__title">Experience or Work</h2>
+            <div class="exp__container container grid">
+                <!--===== EXPERIENCE 1 =====-->
+                <article class="exp__card">
+                    <h2 class="exp__company">Universitas Diponegoro</h2>
+                    <div class="exp__data">
+                        <h3 class="exp__profession">Moderator LKMMPD Informatika 2024</h3>
+                        <span class="exp__date">7 September 2024</span>
+                        <p class="exp__desc">
+                            Saya berkesempatan menjadi moderator untuk materi kedua dalam acara LKMMPD Informatika 2024 yang diadakan oleh
+                            Himpunan Mahasiswa Informatika Universitas Diponegoro.
+                        </p>
+                    </div>
+                </article>
+                <!--===== WORK 1 =====-->
+                <article class="exp__card">
+                    <h2 class="exp__company">Pondok Pesantren MTA</h2>
+                    <div class="exp__data">
+                        <h3 class="exp__profession">Asisten Pelatih Marching Band</h3>
+                        <span class="exp__date">Juli 2024</span>
+                        <p class="exp__desc">
+                            Tergabung dalam korps pelatih Marching Band MTA Solo sebagai asisten pelatih 
+                            dalam rangka persiapan acara Khutbatu-l-'Arsy
+                        </p>
+                    </div>
+                </article>
+                <!--===== WORK 2 =====-->
+                <article class="exp__card">
+                    <h2 class="exp__company">Pondok Modern Tazakka</h2>
+                    <div class="exp__data">
+                        <h3 class="exp__profession">Guru</h3>
+                        <span class="exp__date">2022-2023</span>
+                        <p class="exp__desc">
+                            Saya bekerja sebagai guru di Pondok Modern Tazakka yang mengampu beberapa pelajaran seperti 
+                            Matematika, Bahasa Inggris untuk kelas SMP dan Sastra Arab untuk kelas SMA.
+                        </p>
+                    </div>
+                </article>
+                <!--===== WORK 3 =====-->
+                <article class="exp__card">
+                    <h2 class="exp__company">Pondok Modern Tazakka</h2>
+                    <div class="exp__data">
+                        <h3 class="exp__profession">Sekretaris Pimpinan</h3>
+                        <span class="exp__date">Juni 2022-2023</span>
+                        <p class="exp__desc">
+                            Menjadi bagian dari sekretaris pimpinan yang bertugas membantu segala urusan pimpinan terkait pondok pesantren.
+                            Tugas ini meliputi pengarsipan, penjadwalan, dan komunikasi dengan pihak luar.
+                        </p>
+                    </div>
+                </article>
+            </div>
          </section>
 
          <!--==================== CONTACT ====================-->
          <section class="contact section" id="contact">
-            
+            <h2 class="section__title">Contact Me</h2>
+
+            <div class="contact__container container grid">
+                <form action="" class="contact__form grid" id="contact-form">
+                    <div class="contact__group grid">
+                        <input type="text" name="user_name" placeholder="Names" required class="contact__input">
+                        <input type="email" name="user_email" placeholder="Email" required class="contact__input">
+                    </div>
+
+                    <textarea name="user__message" placeholder="Message" class="contact__input contact__area"></textarea>
+                    <button type="submit" class="button contact__button">Send Message</button>
+                    <p class="contact__message" id="contact-message">
+                    </p>
+                </form>
+            </div>
          </section>
       </main>
 
@@ -247,7 +310,7 @@
       <script src=""></script>
 
       <!--=============== EMAIL JS ===============-->
-      <script src=""></script>
+      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
       <!--=============== MAIN JS ===============-->
       <script src="assets/js/main.js"></script>
