@@ -389,6 +389,12 @@ img {
     margin-block: 1.5rem;
 }
 
+.skills__desc{
+  font: var(--font-regular) var(--small-font-size) var(--body-font);
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
 /*=============== BUTTON ===============*/
 .button{
     display: inline-flex;
