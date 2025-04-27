@@ -363,6 +363,29 @@ img {
     overflow: hidden;
 }
 
+.skills__title{
+    font: var(--font-semi-bold) var(--h2-font-size) var(--fourth-font);
+    margin-bottom: 1rem;
+}
+
+.skills__item{
+    width: 1.5rem;
+    transition: transform .4s;
+    align-items: center;
+}
+
+.skills__item:hover{
+    transform: scale(1.2);
+}
+
+.skills__items{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-block: 1.5rem;
+}
 
 /*=============== BUTTON ===============*/
 .button{
