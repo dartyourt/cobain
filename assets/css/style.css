@@ -161,11 +161,24 @@ img {
     border: .2rem solid hsla(0, 0%, 98%, .1);
 }
 
-.nav__logo{
+/*.nav__logo{
     color: var(--white-color);
     font: var(--font-regular) var(--h1-font-size) var(--fourth-font);
     text-align: center;
     top: -10%;
+}*/
+.nav__logo {
+    color: var(--white-color);
+    font: var(--font-regular) var(--h1-font-size) var(--fourth-font);
+    text-align: center;
+    position: relative;
+    white-space: nowrap;
+    margin-right: 3rem; /* Jarak dengan nav items */
+    min-width: 5ch; /* Minimal lebar untuk 5 karakter */
+    height: 1.5em;
+    display: flex;
+    align-items: center;
+    padding-right: 5px; /* Ruang untuk cursor */
 }
 
 .nav__logo:hover{

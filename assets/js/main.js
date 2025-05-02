@@ -54,3 +54,68 @@ const scrollActive = () =>{
 	})
 }
 window.addEventListener('scroll', scrollActive)
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const logoElement = document.querySelector(".nav__logo");
+    const text = "Dayys";
+    let speed = 270; // kecepatan ketik dalam ms
+    let pause = 2000; // jeda sebelum menghapus
+    
+    // Hapus border dan buat container untuk text dan kursor
+    logoElement.style.borderRight = "none";
+    logoElement.innerHTML = '<span class="logo-text"></span><span class="cursor">|</span>';
+    
+    const textElement = logoElement.querySelector('.logo-text');
+    const cursorElement = logoElement.querySelector('.cursor');
+    
+    // Style untuk kursor
+    cursorElement.style.color = "var(--accent-color)";
+    cursorElement.style.fontWeight = "bold";
+    
+    function typeWriter(text, i, forward) {
+      if (forward) {
+        // Mengetik ke depan
+        if (i < text.length) {
+          textElement.textContent += text.charAt(i);
+          i++;
+          setTimeout(function() {
+            typeWriter(text, i, forward);
+          }, speed);
+        } else {
+          // Selesai mengetik, jeda sebentar
+          setTimeout(function() {
+            typeWriter(text, text.length, false);
+          }, pause);
+        }
+      } else {
+        // Menghapus tulisan
+        if (i >= 0) {
+          textElement.textContent = text.substring(0, i);
+          i--;
+          setTimeout(function() {
+            typeWriter(text, i, false);
+          }, speed - 50); // Menghapus lebih cepat
+        } else {
+          // Selesai menghapus, jeda sebentar
+          setTimeout(function() {
+            typeWriter(text, 0, true);
+          }, pause / 2);
+        }
+      }
+    }
+    
+    // Mulai efek ketik
+    setTimeout(function() {
+      typeWriter(text, 0, true);
+    }, 1000);
+    
+    // Tambahkan animasi cursor berkedip
+    setInterval(function() {
+      if (cursorElement.style.opacity === "0") {
+        cursorElement.style.opacity = "1";
+      } else {
+        cursorElement.style.opacity = "0";
+      }
+    }, 500);
+});
